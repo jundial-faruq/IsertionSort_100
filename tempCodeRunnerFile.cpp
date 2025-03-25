@@ -28,7 +28,7 @@ void input()
 
     for (int i = 0; i < n; i++)
     {
-        cout << "Data ke-" << (i + 1) << ": ";
+        cout << "Data ke-" << (i + 1) << " : ";
         cin >> arr[i];
     }
 
@@ -44,12 +44,13 @@ void InsertionSort()
     for (i = 1; i <= n - 1; i++)
     {
         temp = arr[i];
+        j = i - 1; // sebelumnya gaada
 
-    while (j >= 0 && arr[j] > temp)
-    {
-        arr[j + 1] = arr[j];
-    }
-    arr[j + 1] = temp;
+        while (j >= 0 && arr[j] > temp)
+        {
+            arr[j + 1] = arr[j];
+        }
+        arr[j + 1] = temp;
     }
     
 }
@@ -67,6 +68,7 @@ void display()
     {
         cout << arr[j] << endl;
     }
+    
     cout << endl;
 }
 
