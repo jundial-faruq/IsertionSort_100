@@ -53,3 +53,13 @@ void InsertionSort()
     }
     
 }
+
+void display()
+{
+    cout << endl;
+    cout << "=====================" << endl;
+    cout << "Total Pass =" << n - 1 << endl;
+    cout << "=====================" << endl;
+    cout << "Elemen Array yang telah tersusun" << endl;
+    cout << "=====================" << endl;
+}
