@@ -13,7 +13,7 @@ void input()
 
        if (n <= 20)
        {
-        /break;
+        break;
        }
        else
        {
@@ -31,6 +31,25 @@ void input()
         cout << "Data ke-" << (i + 1) << ": ";
         cin >> arr[i];
     }
-    
 
+
+}
+
+
+void InsertionSort()
+{
+    int temp;
+    int j, i;
+    
+    for (i = 1; i <= n - 1; i++)
+    {
+        temp = arr[i];
+
+    while (j >= 0 && arr[j] > temp)
+    {
+        arr[j + 1] = arr[j];
+    }
+    arr[j + 1] = temp;
+    }
+    
 }
