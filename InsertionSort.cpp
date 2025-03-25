@@ -18,8 +18,12 @@ void input()
        else
        {
         cout << "\nArray yang anda masukan maksimal 20 Elemen.\n";
-        
+
        }
     }
-    
+    cout << endl;
+    cout << "===================" << endl;
+    cout << "Masukan Elemen Array" << endl;
+    cout << "===================" << endl;
+
 }
